@@ -8,36 +8,47 @@ namespace ex1
         {
             while (true)
             {
-                Console.WriteLine(CalculateAvarageConsumption());
+                Console.WriteLine($"Your average constumpion is {CalculateAvarageConsumption()}");
 
                 Console.Write("Press <C> to continue or <X> to exit... ");
-                if(Console.ReadKey().Key == ConsoleKey.X)
+                if (Console.ReadKey().Key == ConsoleKey.X)
                 {
                     break;
                 }
-                Console.WriteLine("\n");
+                Console.Clear();
             }
-
-
         }
-        static string CalculateAvarageConsumption()
+        static float CalculateAvarageConsumption()
         {
-            string message;
-            Console.WriteLine("Type number of travbeled km");
-            var traveledInput = Console.ReadLine();
-            Console.WriteLine("Type number of used fuel in liters");
-            var usedFuelInput = Console.ReadLine();
-            
-            if (float.TryParse(traveledInput, out float traveled ) && float.TryParse(usedFuelInput, out float usedFuel))
+            float traveledKm, usedFuel;
+            while (true)
             {
-                float averageConsumption = (traveled / 100) / usedFuel ;
-                message = $"{averageConsumption} Liters per 100km";
+                Console.WriteLine("Type number of travbeled km");
+                var traveledInput = Console.ReadLine();
+                if (float.TryParse(traveledInput, out traveledKm) && traveledKm > 0)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Please use positive numbers to determine the number of km\n");
+                }
             }
-            else 
+            while (true)
             {
-                message = "Please use correct info";
+                Console.WriteLine("Type number of used fuel in liters");
+                var usedFuelInput = Console.ReadLine();
+                if (float.TryParse(usedFuelInput, out usedFuel) && traveledKm > 0)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Please use positive numbers to determine the number of fuel\n");
+                }
             }
-            return (message);
+            var averageConsumption = (traveledKm / 100) / usedFuel;
+            return (averageConsumption);
         }
     }
 }
