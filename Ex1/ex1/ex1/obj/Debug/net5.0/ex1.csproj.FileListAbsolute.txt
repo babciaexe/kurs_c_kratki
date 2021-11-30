@@ -1,0 +1,16 @@
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.exe
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.deps.json
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.runtimeconfig.json
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.runtimeconfig.dev.json
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.dll
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ref\ex1.dll
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\bin\Debug\net5.0\ex1.pdb
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.csproj.AssemblyReference.cache
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.AssemblyInfoInputs.cache
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.AssemblyInfo.cs
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.csproj.CoreCompileInputs.cache
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.dll
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ref\ex1.dll
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.pdb
+D:\Kuba\PROGRAMOWANIE\repo\kurs_c_kratki\Ex1\ex1\ex1\obj\Debug\net5.0\ex1.genruntimeconfig.cache
