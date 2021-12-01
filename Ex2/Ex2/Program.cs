@@ -35,7 +35,6 @@ namespace Ex2
                             break;
                         }
                         Console.WriteLine("\nPlease type correct value");
-
                     }
                 }
 
