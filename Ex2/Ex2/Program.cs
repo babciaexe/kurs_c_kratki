@@ -14,30 +14,19 @@ namespace Ex2
              {2, 180},
              {3, 600}};
             var time = 0;
-            Console.WriteLine("Welcome to timer aplication!\n");
+            Console.WriteLine("Welcome to timer application!\n");
             while (true)
             {
-                Console.Clear();
                 Console.WriteLine("\nPick Time: \n1. 30 seconds \n2. 3 minutes \n3. 10 minutes \n4. Custom value \nPress escape to quit");
                 var option = GetOption();
-                if (option == 0) 
+                if (option == 0)
                 {
-                    break; 
+                    break;
                 }
-                else if(option == 4)
+                if (option == 4)
                 {
-                    while (true)
-                    {
-                        Console.WriteLine("\nType the time in seconds");
-                        var inputTime = Console.ReadLine();
-                        if (int.TryParse(inputTime, out time))
-                        {
-                            break;
-                        }
-                        Console.WriteLine("\nPlease type correct value");
-                    }
+                    time = GetCustomTime();
                 }
-
                 Console.Clear();
                 Console.WriteLine("Time start!");
                 if (time != 0)
@@ -50,13 +39,34 @@ namespace Ex2
                     Counting(time);
                 }
                 PlaySong();
-
+                Console.Clear();
                 Console.WriteLine("Do you want to set up new timer? \nPress escepe to quit or any other key to continue");
                 if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
                     break;
                 }
+                Console.Clear();
             }
+        }
+
+        private static int GetCustomTime()
+        {
+            int time;
+            while (true)
+            {
+                Console.WriteLine("\nType the time in seconds");
+                var inputTime = Console.ReadLine();
+                if (int.TryParse(inputTime, out time))
+                {
+                    if (time < 6039)
+                    {
+                        break;
+                    }
+                    Console.WriteLine("The time cannot be greather than 6 039 seconds");
+                }
+                Console.WriteLine("\nPlease type correct value");
+            }
+            return time;
         }
 
         static int GetOption()
@@ -76,7 +86,7 @@ namespace Ex2
                 {
                     break;
                 }
-                else { Console.WriteLine("\nPlease type correct value"); }
+                Console.WriteLine("\nPlease type correct value");
                 
             }
             return option;
@@ -88,28 +98,29 @@ namespace Ex2
             {
                 int minutes = time / 60;
                 int seconds = time - (minutes * 60);
+                Console.SetCursorPosition(0, Console.CursorTop);
                 if (minutes < 10 && seconds < 10)
                 {
-                    Console.WriteLine($"0{minutes}:0{seconds}");
+                    Console.Write($"0{minutes}:0{seconds}");
                 }
                 else if (minutes < 10 && seconds >= 10)
                 {
-                    Console.WriteLine($"0{minutes}:{seconds}");
+                    Console.Write($"0{minutes}:{seconds}");
                 }
                 else if (minutes >= 10 && seconds < 10)
                 {
-                    Console.WriteLine($"{minutes}:0{seconds}");
+                    Console.Write($"{minutes}:0{seconds}");
                 }
                 else if (minutes >= 10 && seconds >= 10)
                 {
-                    Console.WriteLine($"{minutes}:{seconds}");
+                    Console.Write($"{minutes}:{seconds}");
                 }
                 
-                Thread.Sleep(995);
+                Thread.Sleep(997);
                 if (time <= 0) { break; }
                 time -= 1;
             }
-            Console.WriteLine("ALARM! ALARM! ALARM!");
+            Console.WriteLine("\nALARM! ALARM! ALARM!");
         }
 
         static void PlaySong()
